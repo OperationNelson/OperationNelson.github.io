@@ -345,3 +345,26 @@ h3{
 .prpl-button:hover{
     color: white;
 }
+
+.contactable{
+    width: 80%;
+    margin: auto;
+}
+
+.contactcol{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contactcol div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contactcol div .fa{
+    font-size: 28px;
+    color: rgb(194, 61, 255);
+    margin: 10px;
+    margin-right: 30px;
+}
