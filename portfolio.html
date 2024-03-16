@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang = "en">
+<meta charset = "UTF-8">
+<head>
+    <meta name = "viewport" content="with=device-width, initial-scale=1.0">
+        <title>Operation Control</title>
+        <link rel = "stylesheet" href = "style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><image src="images/logo.png"></a>
+                <div class = nav-links id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="portfolio.html">PROJECTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <section class="subheader">
+            <h1>Projects</h1>
+        </section>
+    </section>
+
+    <!---contact--->
+
+    <section class="projects">
+        <div class="recentProj">
+            <img src="Images/tempImage.jpg" alt="The most recent project I'm working on">
+            <div class="TopProj">
+                <h2>The most recent project</h2>
+                <p>summary of the project</p>
+            </div>
+        </div>
+        <div class="pastProjAlwaysVisable">
+            <li class="pastCol">
+                <img src="" alt="Project 5">
+                <h3>Project 5</h3>
+                <p>Summary of Project 5</p>
+            </li>
+            <li class="pastCol">
+                <img src="" alt="Project 6">
+                <h3>Project 6</h3>
+                <p>Summary of Project 6</p>
+            </li>
+            <li class="pastCol">
+                <img src="" alt="Project 7">
+                <h3>Project 7</h3>
+                <p>Summary of Project 7</p>
+            </li>
+        </div>
+        <button type="button" class="showMore" onclick = "toggleSection(showMore, hiddenItems);">Show More</button>
+        <ul id="hiddenItems">
+            <div class="pastProjShowMore">
+                <li class="pastCol">
+                    <img src="" alt="Project 5">
+                    <h3>Project 5</h3>
+                    <p>Summary of Project 5</p>
+                </li>
+                <li class="pastCol">
+                    <img src="" alt="Project 6">
+                    <h3>Project 6</h3>
+                    <p>Summary of Project 6</p>
+                </li>
+                <li class="pastCol">
+                    <img src="" alt="Project 7">
+                    <h3>Project 7</h3>
+                    <p>Summary of Project 7</p>
+                </li>
+            </div>
+        </ul>
+        <button class="showLess" onclick="toggleSection(showLess, hiddenItems);">Show Less</button>
+    </section>
+
+    <!---footer--->
+    <section class="footer">
+        <h4>About Me</h4>
+        <p></p>
+        <div class = "icons">
+            <i class = "fa fa-instagram"></i>
+            <i class = "fa fa-linkedin-square"></i>
+        </div>
+        <p>Hosted with Github</p>
+    </section>
+    <!------JavaScript for Show/Hide Menu------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+        function toggleSection(buttonId, section){
+            var hideBtn, showBtn;
+            if(buttonId == "showMore")
+            {
+                document.getElementById(section).style.display = '';
+                showBtn = "showLess";
+                hideBtn = "showMore";
+            }
+            else if(buttonId == "showLess")
+            {
+                document.getElementById(section).style.display = 'none';
+                showBtn = "showMore";
+                hideBtn = "showLess";
+            }
+            document.getElementById(showBtn).style.display = '';
+            document.getElementById(hideBtn).style.display = 'none';
+        }
+    </script>
+</body>
+</html>
