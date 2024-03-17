@@ -49,29 +49,12 @@ nav img{
     width: 100%;
 
 }
-.text-box{
-    width: 90%;
-    color: rgb(71, 71, 71);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-}
-.text-box h1{
-    font-size: 64px;
-}
-.text-box p{
-    margin: 10px 0 40px;
-    font-size: 14px;
-    color:rgb(63, 63, 63);
-}
+
 .hero-btn{
     display: inline-block;
     text-decoration: none;
     color: rgb(56, 12, 70);
     border: 1px solid rgb(56, 12, 70);
-    padding: 12px 34px;
     font-size: 13px;
     background: transparent;
     position: relative;
@@ -260,7 +243,7 @@ h3{
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
-    background: rgb(56, 12, 70);
+    background: rgb(210, 120, 252);
     padding: 25px;
     cursor: pointer;
     display: flex;
@@ -328,6 +311,26 @@ h3{
     margin: 0;
     cursor: pointer;
     padding: 18px 0;
+}
+
+.MainSubHeader{
+    height: 30vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(149, 113, 156, 0.425),rgba(149, 113, 156, 0.425)),url(Images/background1.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: rgb(56, 12, 70);
+}
+
+.MainSubHeader h1{
+    line-height: 30vh;
+}
+
+.MainSubHeader p{
+    color: rgb(56, 12, 70);
+    margin-top: -14vh;
+    line-height: 2vh;
 }
 
 .subheader{
@@ -460,4 +463,56 @@ h3{
     text-align: left;
 }
 
+.personal{
+    border-radius: 30px;
+    border-width: 80%;
+    margin-left: 2%;
+    margin-right: 4%;
+    height: 600px;
+    background-color: rgb(210, 120, 252);
+    margin-top: 50px;
+}
 
+.personal img{
+    background-color: rgb(210, 120, 252);
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    max-height: 90%;
+    max-width: 50%;
+    float: left;
+    border-radius: 30px;
+}
+
+.Name{
+    position: relative;
+    left: 50px;
+    top: 100px;
+    margin-left: 15px;
+    font-weight: 700;
+    font-size: 25px;
+    color: white;
+}
+
+.personal p{
+    position: relative;
+    left: 50px;
+    top: 120px;
+    margin-left: 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 300px;
+}
+
+.resume h2{
+    margin-top: 30px;
+    font-size: 30px;
+    color: rgb(56, 12, 70);
+    text-align: center;
+}
+.resume a{
+    position: relative;
+    left: 48%;
+    top: 10px;
+}
