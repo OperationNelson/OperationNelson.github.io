@@ -51,17 +51,18 @@ nav img{
 }
 
 .hero-btn{
+    text-align: center;
     display: inline-block;
     text-decoration: none;
     color: rgb(56, 12, 70);
-    border: 1px solid rgb(56, 12, 70);
-    font-size: 13px;
+    border: 2px solid rgb(56, 12, 70);
+    font-size: 20px;
     background: transparent;
     position: relative;
     cursor: pointer;
 }
 .hero-btn:hover{
-    border-left: 1px solid rgb(56, 12, 70);
+    border-left: 2px solid rgb(56, 12, 70);
     background: rgb(56, 12, 70);
     transition: 1s;
 }
@@ -513,6 +514,6 @@ h3{
 }
 .resume a{
     position: relative;
-    left: 48%;
+    left: 47%;
     top: 10px;
 }
