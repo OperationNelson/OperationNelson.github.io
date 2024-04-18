@@ -390,8 +390,9 @@ h3{
     display: none;
 }
 
-.projects button:active + ul, .projects input:checked + ul{
+.projects button{
     display: block;
+    margin-left: 48%;
 }
 
 .projects button{

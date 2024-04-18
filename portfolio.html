@@ -60,7 +60,7 @@
                 <p>Worked on modeling the new version of the CECO ladder to help those who have difficulty moving have a more entertaining method of overcoming their disability</p>
             </div>
         </div>
-        <button type="button" class="showMore" onclick = "toggleSection(showMore, hiddenItems);">Show More</button>
+        <button type="button" class="showMore" onclick = "toggleSection(showMore);">Show More</button>
         <ul id="hiddenItems">
             <div class="pastProjShowMore">
                 <div class="pastCol">
@@ -79,7 +79,7 @@
                     <p>Summary of Project 7</p>
                 </div>
             </div>
-            <button class="showLess" onclick="toggleSection(showLess, hiddenItems);">Show Less</button>
+            <button class="showLess" onclick="toggleSection(showLess);">Show Less</button>
         </ul>
     </section>
 
@@ -102,22 +102,21 @@
         function hideMenu(){
             navLinks.style.right = "-200px"
         }
-        function toggleSection(buttonId, section){
-            var hideBtn, showBtn;
+        function toggleSection(buttonId){
             if(buttonId == "showMore")
             {
-                document.getElementById(section).style.display = '';
+                document.getElementById("hiddenItems").style.visibility = 'visible';
                 showBtn = "showLess";
                 hideBtn = "showMore";
             }
             else if(buttonId == "showLess")
             {
-                document.getElementById(section).style.display = 'none';
+                document.getElementById("hiddenItems").style.visibility = 'hidden';
                 showBtn = "showMore";
                 hideBtn = "showLess";
             }
-            document.getElementById(showBtn).style.display = '';
-            document.getElementById(hideBtn).style.display = 'none';
+            document.getElementById(showBtn).style.visibility = 'visible';
+            document.getElementById(hideBtn).style.visibility = 'hidden';
         }
     </script>
 </body>
