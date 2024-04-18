@@ -394,6 +394,9 @@ h3{
     display: block;
 }
 
+.projects button{
+    align-self: center;
+}
 .recentProj{
     display: grid;
     grid-template-columns: 1.75fr 1fr 0.5fr;
