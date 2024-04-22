@@ -15,9 +15,7 @@ $email_body = "User Name: $name.\n".
 
 $to = 'aneltospace@gmail.com';
 
-$headers = "From: $email_from \r\n";
-
-$headers .= "Reply-To: $visitor_email \r\n";
+$headers = "From: $email_from \r\n". "Reply-To: $visitor_email \r\n". 'X-Mailer: PHP/'. phpversion();
 
 mail($to,$email_subject,$email_body,$headers);
 
