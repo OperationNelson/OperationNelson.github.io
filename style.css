@@ -427,45 +427,56 @@ h3{
     font-size: 20px;
 }
 
-.pastProjAlwaysVisable{
-    font-weight: 500;
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-}
-
-.pastProjAlwaysVisable h2{
+.projects h1{
     text-align: center;
     margin-top: 50px;
     margin-bottom: 20px;
 }
 
+.pastProjAlwaysVisable{
+    display: flex;
+    font-weight: 500;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
 .pastCol{
-    flex-basis: 31%;
+    flex-basis: auto;
+    max-height: 600px;
+    max-width: 28%;
     background: rgb(210, 120, 252);
     border-radius: 10px;
-    margin-bottom: 5%;
+    margin: 0 auto;
     padding: 20px 12px;
+    margin-left: 4%;
     box-sizing: border-box;
     transition: 0.5s;
 }
 
 .pastCol img{
     float: left;
-    width: 100;
+    max-width: 100%;
+    height: auto;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .pastCol p{
     text-align: left;
-    padding: 0;
+    padding: 10px;
+    overflow-wrap: anywhere;
 }
 
 .pastCol h3{
-    margin-top: 16px;
+    margin-top: 20px;
     margin-bottom: 10px;
+    padding-left: 20px;
     text-align: left;
+}
+
+.projects button{
+    margin: auto;
 }
 
 .personal{
